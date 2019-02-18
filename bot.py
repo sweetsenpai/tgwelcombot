@@ -46,7 +46,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://enigmatic-thicket-55792.herokuapp.com/' + TOKEN)
+    bot.set_webhook(url='heroku-app-url/' + TOKEN)
     return "!", 200
 
 
